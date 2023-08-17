@@ -77,8 +77,7 @@ const Navbar = () => {
           />
         </svg>
       </div>
-    <div className={ openmenu ? "absolute duration-300 w-[250px] h-[400px] first-letter: bg-pink-200 border-2 border-black lg:right-3 xl:right-3 md:right-3 right-0 lg:top-[7rem] top-[65px] bg-opacity-100" : "absolute duration-300 border-2 border-black w-[250px] h-[400px] bg-pink-200 right-[50%] Lg:top-[7rem] top-[65px] opacity-0"}>
-    uyghjshiu
+    <div className={ openmenu ? "absolute duration-300 w-[250px] h-[455px] lg:w-[250px] xl:w-[250px] md:w-[250px] lg:h-[400px] xl:h-[400px] md:h-[400px] bg-pink-200 border-2 border-black lg:right-3 xl:right-3 md:right-3 right-0 lg:top-[7rem] top-[65px] bg-opacity-100" : "absolute duration-300 border-2 border-black lg:w-[250px] xl:w-[250px] md:w-[250px] lg:h-[400px] xl:h-[400px] md:h-[400px] h-[455px] w-[250px] bg-pink-200 right-[50%] Lg:top-[7rem] top-[65px] opacity-0"}>
     </div>
       {/* pc */}
       <div className="lg:flex xl:flex md:hidden hidden gap-x-4">
