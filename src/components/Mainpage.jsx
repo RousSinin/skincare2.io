@@ -1,6 +1,7 @@
 import React from "react";
 import Category from "./Category";
 import Product from "./Product";
+import { ProductInfo } from "../data";
 const Mainpage = () => {
   return (
     <div className="w-full">
@@ -32,14 +33,14 @@ const Mainpage = () => {
       </div>
       <div className="w-full max-w-[1440px] mx-auto flex items-center justify-between py-7">
         {/* left Icon */}
-        <div>
+        <div className="lg:block xl:block md:hidden hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-20 h-20"
+            className="lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] md:w-[3rem] md:h-[3rem] w-[40px] h-[40px]"
           >
             <path
               strokeLinecap="round"
@@ -49,18 +50,20 @@ const Mainpage = () => {
           </svg>
         </div>
         {/* cart */}
-        <div>
-          <Product/>
+        <div className="lg:grid-cols-3 xl:grid-cols-4 md:gird-cols-2 grid grid-cols-1 mx-auto gap-x-5">
+          {ProductInfo.map((item) => {
+            return <Product item={item} key={item.id}/> ;
+            })}
         </div>
         {/* right Icon */}
-        <div>
+        <div className="lg:block xl:block md:hidden hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-20 h-20"
+            className="lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] md:w-[3rem] md:h-[3rem] w-[40px] h-[40px]"
           >
             <path
               strokeLinecap="round"

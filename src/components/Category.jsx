@@ -35,7 +35,7 @@ const Category = () => {
             {cate.map((item,index) =>{
                 return(
                     <div key={index} className='p-2 lg:ml-10 xl:ml-10 md:ml-0 ml-0'>
-                        <img className='lg:w-[6rem] xl:w-[7rem] md:w-[6rem] lg:h-[6rem] xl:h-[7rem] md:h-[6rem] w-[5rem] h-[5rem] hover:scale-105 duration-300 object-cover rounded-full mx-auto '
+                        <img className='lg:w-[5rem] xl:w-[6rem] md:w-[5rem] lg:h-[6rem] xl:h-[6rem] md:h-[5rem] w-[4rem] h-[4rem] hover:scale-105 duration-300 object-cover rounded-full mx-auto '
                         src={item.img} alt="" />
                         <h1 className='text-center text-black text-xl'>{item.title}</h1>
                     </div>
